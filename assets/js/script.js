@@ -13,14 +13,25 @@ currentDayEl.text(DateTime)
 // make elements 
 const inputEl = $('.description').text();
 const saveEl = $(".saveBtn");
+// let textAreas =["$('#text-hour-9')","$('#text-hour-10')","$('#text-hour-11')","$('#text-hour-12')","$('#text-hour-13')","$('#text-hour-14')","$('#text-hour-15')","$('#text-hour-16')","$('#text-hour-17')"]
+// console.log(textAreas[1])
+// textAreas[1].text()=""
 // whenever save is clicked, grab input and save to local storage
-saveEl.click(function(){
-    console.log("save-clicked");
-    localStorage.setItem("description",inputEl);
-})
+
+for (let index = 9; index < 17; index++) {
+
+    saveEl.on('click', function(){
+        console.log("save-clicked");
+        let text= $('#text-hour-'+index).val();
+        localStorage.setItem("description",text);
+        
+    });
+}
 // load local storage on refresh
 var loadTasks = function() {
-   localStorage.getItem(inputEl);
+    
+
+   localStorage.getItem("description");
 };
 loadTasks();
 
