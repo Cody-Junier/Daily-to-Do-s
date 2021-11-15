@@ -1,6 +1,8 @@
 The purpose of this site is to keep track of daily work tasks during a typical 9-5 work day. Items can be added, removed, and saved while a dynamic color-change will help you keep track of what you should have already done, should do currently, and what you still have left to do in the day.
+
 https://cody-junier.github.io/Daily-to-Do-s/
-![background for webpage](assets/Photos/Screenshot.jpg)
+
+![background for webpage](assets/Photos/Screenshot.png)
 
 
 MIT License
